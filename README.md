@@ -1,68 +1,96 @@
-# Hi, I'm Avinash Saxena 👋 
+# Hi, I'm Avinash Saxena 👋
 
-### 🚀 Software Engineer | AI & Machine Learning Specialist | 6x Salesforce Certified
+### Software Engineer · Backend & Distributed Systems · AI/LLM Integration
 
-I am a technically driven Software Engineer with 3+ years of experience building scalable backend systems and first-party tools. I recently completed my M.S. in Artificial Intelligence at San Jose State University with a 3.9 GPA, focusing on GenAI, LLM-driven automation, and RAG frameworks.
+I'm a software engineer with 4+ years of experience building high-throughput backend systems and distributed data pipelines — and more recently expanding into GenAI and LLM integration. I recently completed my M.S. in Artificial Intelligence at San Jose State University (GPA: 3.9), where I built an AI multi-agent research platform combining distributed systems with LLM tooling.
 
-**📢 Seeking Full-Time Opportunities:** I am actively looking for **Software Engineer (SDE II)**, **Backend Engineer**, or **Data Analyst** roles across the US. I am based in San Jose, CA, and am **immediately available** to join your team.
-
----
-
-## 🛠 Skills & Expertise
-
-* **Languages:** Java, Python, Node.js, SQL, Go (Learning)
-* **Backend:** Spring Boot, Microservices, GraphQL, Kafka, Hibernate, Django
-* **AI & ML:** GenAI, LLMs (LangChain), RAG, TensorFlow, PyTorch, Scikit-learn, NLP
-* **Cloud & DevOps:** AWS (SageMaker), GCP, Docker, Kubernetes, CI/CD (Jenkins), ELK Stack
-* **Specialized:** Salesforce Ecosystem (CPQ, Sales Cloud, Revenue Cloud), Mulesoft
+Currently based in **San Jose, CA** and actively looking for **Senior Software Engineer** roles focused on backend infrastructure, CI/CD, or AI/LLM integration.
 
 ---
 
-## 📈 Professional Experience
+## 🛠 Tech Stack
 
-### **Research Assistant** | San Jose State University
-*Jan 2025 – Mar 2025*
-* Developed an **Agentic AI application** using LLMs and GraphQL to automate student resource retrieval, increasing accessibility by 30%.
-* Optimized LLM accuracy by 25% through meta-prompting and chain-of-thought reasoning.
+**Languages**
+`Go` `Python` `Java` `SQL` `Shell Scripting`
 
-### **Software Engineer - Salesforce** | NTT Data (Client: Dave & Buster's)
-*Sep 2021 – Jan 2024*
-* Managed a three-member team to integrate web applications with **Salesforce CPQ/Sales Cloud**, increasing data sync speed by 30%.
-* Automated production rollouts using **Dockerized microservices**, reducing deployment errors by 40%.
+**Backend & Distributed Systems**
+`gRPC / Protobuf` `RabbitMQ` `Apache Kafka` `Redis` `PostgreSQL` `Django` `Spring Boot` `REST APIs`
 
-### **Software Engineer** | Deloitte (Client: Broadcom)
-*Jan 2020 – Sep 2021*
-* Scaled **ELK Stack** to a distributed architecture across 4 GCP servers, significantly improving system reliability.
-* Reduced API response times by **66%** (from 30s to 10s) through caching and asynchronous processing.
+**AI & LLM**
+`LLM Tool-Calling (MCP)` `Prompt Engineering` `LangChain` `smolagents` `RAG` `PyTorch`
+
+**Observability**
+`Prometheus` `Jaeger` `Grafana` `OpenTelemetry` `ELK Stack` `pprof`
+
+**CI/CD & Infrastructure**
+`Jenkins` `Docker` `Kubernetes` `KEDA` `Bazel` `AWS (SageMaker, EC2)`
+
+---
+
+## 💼 Experience
+
+### 🎓 Research Assistant — San Jose State University
+`Jan 2024 – May 2025`
+
+Built an **AI Multi-Agent Research Platform** — a distributed system for analyzing academic papers using LLM agents.
+
+- Architected a **Go-based MCP framework** as a standardized tool-calling layer for LLM agents — handled concurrent tool requests using Goroutines, with **smolagents** on top for agent orchestration
+- Applied **prompt engineering** techniques — chain of thought, few shot, and meta prompting — to improve AI agent accuracy across different paper types
+- Built **Python/Django** backend with Kafka event-driven architecture — decoupled heavy AI processing from main request flow, auto-scaled Docker workers on **Kubernetes via KEDA** based on Kafka consumer lag
+- Set up **Jenkins CI/CD pipelines** — automated testing, Docker image builds, and rolling deployments across all services
+
+---
+
+### ⚙️ Senior Software Engineer — NTT Data *(Client: Dave & Buster's)*
+`Sep 2021 – Jan 2024`
+
+Designed and built the integration layer connecting Dave & Buster's existing systems with Salesforce Cloud for real-time pricing, product configuration, and rewards processing.
+
+- Architected **Go microservices** handling millions of daily real-time events with sub-100ms response times
+- Engineered async task processing using **Goroutines and RabbitMQ** — decoupled reward syncing from checkout flow, eliminated peak-hour bottlenecks
+- Executed **pprof performance profiling** — identified Goroutine leak causing memory growth under load, resolved with context timeouts — reduced CPU utilization by 25%
+- Designed **gRPC/Protobuf API contracts** for inter-service communication — binary serialization significantly faster than REST/JSON at scale
+- Implemented **Redis distributed caching** with event-based invalidation — reduced latency by 40%, eliminated redundant Salesforce API calls
+- Contributed to **Jenkins, Docker, and Kubernetes** CI/CD workflows supporting automated deployments
+
+---
+
+### 🔧 Software Engineer — Deloitte *(Client: Broadcom)*
+`Jan 2020 – Sep 2021`
+
+Maintained Broadcom's License Management application — a Java Spring microservice used by hundreds of vendors globally for hardware and software license generation.
+
+- Modified existing **Java Spring microservices** to support new external license generation flow — built mock simulation service to unblock development against unstable external API
+- Built **Python data pipeline** using Pandas and ELK stack — automated vendor compliance reporting, replaced manual database queries with real-time Kibana dashboards
+- Diagnosed and resolved API performance issues using **Spring Boot Actuator and JVisualVM** — identified missing indexes and cold start issues, optimized with composite indexes and warmup scripts — reduced response times by 35%
+- Improved observability with **Prometheus and Jaeger** — set up metrics tracking, distributed tracing, and alerting — significantly reduced MTTR for production incidents
+- Hands-on experience with **Jenkins** CI/CD pipelines across large cross-functional teams
 
 ---
 
 ## 🎓 Education
 
-* **M.S. in Artificial Intelligence (Data Science Specialization)** | San Jose State University | GPA: 3.9/4.0
-* **B.E. in Information Technology** | SGSITS Indore, India | GPA: 3.8/4.0
+**M.S. Artificial Intelligence** — San Jose State University *(GPA: 3.9/4.0)*
+`Conferred Dec 2025`
+Distributed Systems · Deep Learning · NLP · Recommender Systems
+
+**B.E. Computer Science** — SGSITS Indore, India *(GPA: 3.8/4.0)*
+`2015 – 2019`
 
 ---
 
-## 📂 Featured Projects
+## 📂 Projects
 
-### [Deepfake Audio Detection Framework](https://github.com/avinashsaxena777) 🎤
-* **Master’s Thesis:** Designed a GenAI detection framework using retrieval-augmented generation (RAG) to identify AI-generated audio.
-* Built a machine learning pipeline that achieved high accuracy in open-set testing against unseen synthesis techniques.
+### [Deepfake Audio Detection Framework](https://github.com/avinashsaxena777)
+Master's thesis — built a RAG-based framework for detecting AI-generated audio using LLM inference pipelines. Engineered automated ML pipelines to process unstructured audio data for real-time verification.
 
-### [Intelligent Autonomous Robot Patrolling](https://github.com/avinashsaxena777) 🤖
-* Developed a multi-threat detection system using **YOLOv8 and Transformers**, achieving 95% accuracy.
-* Architected AWS infrastructure with **SageMaker** to support 50+ concurrent sessions with 99.9% uptime.
+### [Intelligent Autonomous Robot Patrolling](https://github.com/avinashsaxena777)
+Multi-threat detection system using YOLOv8 for real-time data stream analysis. Designed AWS infrastructure via SageMaker supporting 50+ concurrent sessions with 99.9% uptime.
 
 ---
 
-## 🏆 Certifications
-* **Salesforce:** CPQ Specialist, Platform Developer II, Revenue Cloud Consultant, Sales Cloud Consultant, Platform Developer I, and Administrator.
+## 📫 Let's Connect
 
----
-
-## 📫 Let's Connect!
-
-* **Email:** [avinashsaxenagrad@gmail.com](mailto:avinashsaxenagrad@gmail.com)
-* **LinkedIn:** [linkedin.com/in/avinashsaxenaofficial](https://linkedin.com/in/avinashsaxenaofficial)
-* **Location:** San Jose, CA (Open to Relocation)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-avinashsaxenaofficial-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/avinashsaxenaofficial)
+[![Email](https://img.shields.io/badge/Email-avinashsaxenagrad@gmail.com-EA4335?style=flat&logo=gmail)](mailto:avinashsaxenagrad@gmail.com)
+[![Location](https://img.shields.io/badge/Location-San%20Jose%2C%20CA-34A853?style=flat&logo=google-maps)](https://maps.google.com/?q=San+Jose,+CA)
